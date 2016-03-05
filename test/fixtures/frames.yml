@@ -1,0 +1,61 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  number: 1
+  player: one
+
+no_throws:
+  number: 1
+  player: one
+
+gutter:
+  number: 1
+  player: one
+
+partial_partial:
+  number: 1
+  player: two_partial_frames
+
+partial_partial2:
+  number: 2
+  player: two_partial_frames
+
+partial_spare:
+  number: 1
+  player: incomplete_spare
+
+strike:
+  number: 1
+  player: incomplete_strike
+
+strike_partial_spare:
+  number: 1
+  player: complete_strike
+
+strike_strike_partial:
+  number: 1
+  player: one
+
+strike_strike_strike:
+  number: 1
+  player: one
+
+spare_partial:
+  number: 1
+  player: complete_spare
+
+spare_strike:
+  number: 1
+  player: one
+
+partial_partial_partial:
+  number: 1
+  player: one
+
+final:
+  number: 1
+  player: final_score
+
+final_all_strikes:
+  number: 1
+  player: final_all_strikes

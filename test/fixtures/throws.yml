@@ -1,0 +1,121 @@
+one: {}
+
+none_down:
+  pins_down: 0000000000
+  frame: one
+
+some_down:
+  pins_down: 1001110101
+  frame: one
+
+remainder_down:
+  pins_down: 0110001010
+  frame: one
+
+all_down:
+  pins_down: 1111111111
+  frame: one
+
+gutter:
+  pins_down: 0000000000
+  frame: gutter
+
+partial1:
+  pins_down: 1111100000
+  frame: partial_partial
+
+partial2:
+  pins_down: 0000011110
+  frame: partial_partial
+
+partial3:
+  pins_down: 1111100000
+  frame: partial_spare
+
+spare1:
+  pins_down: 0000011111
+  frame: partial_spare
+
+strike1:
+  pins_down: 1111111111
+  frame: strike
+
+strike2:
+  pins_down: 1111111111
+  frame: strike_partial_spare
+
+partial5:
+  pins_down: 1111100000
+  frame: strike_partial_spare
+
+spare2:
+  pins_down: 0000011111
+  frame: strike_partial_spare
+
+strike3:
+  pins_down: 1111111111
+  frame: strike_strike_partial
+
+strike4:
+  pins_down: 1111111111
+  frame: strike_strike_partial
+
+partial6:
+  pins_down: 1111100000
+  frame: strike_strike_partial
+
+strike5:
+  pins_down: 1111111111
+  frame: strike_strike_strike
+
+strike6:
+  pins_down: 1111111111
+  frame: strike_strike_strike
+
+strike7:
+  pins_down: 1111111111
+  frame: strike_strike_strike
+
+partial7:
+  pins_down: 1111100000
+  frame: spare_partial
+
+spare3:
+  pins_down: 0000011111
+  frame: spare_partial
+
+partial8:
+  pins_down: 1111100000
+  frame: spare_partial
+
+partial9:
+  pins_down: 1111100000
+  frame: spare_strike
+
+spare4:
+  pins_down: 0000011111
+  frame: spare_strike
+
+strike8:
+  pins_down: 1111111111
+  frame: spare_strike
+
+partial10:
+  pins_down: 1111100000
+  frame: partial_partial_partial
+
+partial11:
+  pins_down: 0000011110
+  frame: partial_partial_partial
+
+partial12:
+  pins_down: 1111100000
+  frame: partial_partial_partial
+
+partial13:
+  pins_down: 0000011110
+  frame: partial_partial2
+
+partial14:
+  pins_down: 1111100000
+  frame: partial_partial2
