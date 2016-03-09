@@ -1,0 +1,4 @@
+= form_for :game, url: {action: :create} do |f|
+  = f.select(:player_count, (1..8).to_a,
+    {prompt: "Select number of players"}, required: true)
+  = f.submit "Start game"

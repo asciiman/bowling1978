@@ -16,39 +16,21 @@ ActiveRecord::Schema.define(version: 20160305121428) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "frames", force: :cascade do |t|
-    t.integer  "number"
-    t.integer  "player_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  add_index "frames", ["player_id"], name: "index_frames_on_player_id", using: :btree
-
   create_table "games", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.integer  "player_count"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
   end
-
-  create_table "players", force: :cascade do |t|
-    t.integer  "number"
-    t.integer  "game_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  add_index "players", ["game_id"], name: "index_players_on_game_id", using: :btree
 
   create_table "throws", force: :cascade do |t|
-    t.binary   "pins_down",  default: "0"
-    t.integer  "frame_id"
-    t.datetime "created_at",               null: false
-    t.datetime "updated_at",               null: false
+    t.integer  "player_number"
+    t.integer  "frame_number"
+    t.integer  "throw_number"
+    t.binary   "pins_down",     default: "0"
+    t.integer  "game_id"
+    t.datetime "created_at",                  null: false
+    t.datetime "updated_at",                  null: false
   end
 
-  add_index "throws", ["frame_id"], name: "index_throws_on_frame_id", using: :btree
-
-  add_foreign_key "frames", "players"
-  add_foreign_key "players", "games"
-  add_foreign_key "throws", "frames"
+  add_foreign_key "throws", "games"
 end

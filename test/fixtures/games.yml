@@ -1,5 +1,13 @@
 noplayer: {}
-one: {}
-two: {}
-one_player: {}
-two_player: {}
+
+one:
+  player_count: 1
+
+two:
+  player_count: 2
+
+one_player:
+  player_count: 1
+
+two_player:
+  player_count: 2

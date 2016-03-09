@@ -1,0 +1,66 @@
+// Place all the styles related to the Games controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+hr {
+  margin-top: 80px;
+}
+
+#pins {
+  text-align: center;
+  width: 400px;
+}
+
+#pins span {
+  padding: 15px;
+  line-height: 35px;
+}
+
+.pin_cleared {
+  color: #cccccc;
+}
+
+#score th {
+  padding: 11px 30px;
+  background-color: #4CAF50;
+  color: white;
+  border: 1px solid #ddd;
+}
+
+#score tr {
+  background-color: #f2f2f2;
+}
+
+#score td:first-child {
+  background-color: #af730d;
+  color: white;
+}
+
+#score td {
+  border: 1px solid #ddd;
+  width: 60px;
+  height: 70px;
+  padding: 10px;
+}
+
+#score td p {
+  margin: 0;
+}
+
+#score td .throw_scores {
+  text-align-last: justify;
+}
+
+#score td .frame_score {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+#replay {
+  display: none;
+}
+
+#replay.game_over {
+  display: inherit;
+  text-align: center;
+}
