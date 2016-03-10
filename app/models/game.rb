@@ -15,6 +15,7 @@ class Game < ActiveRecord::Base
   end
 
   def pin_cleared?(pin)
+    return false if throws.empty?
     throws.last.pins_down.to_i(2) & (1<<pin) > 0 &&
         throws.last.throw_number == 1 && throws.last.score < 10
   end
