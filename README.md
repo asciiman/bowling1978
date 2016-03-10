@@ -1,5 +1,18 @@
 # bowling1978
+
+## Background
 Demo ruby on rails app
+
+I was given this app as a code test assignment for a company I am applying for in Munich.
+
+The app comes complete with validations and unit tests.  I had originally tried dividing out the models into Games, Players, Frames, and Throws.  But since all those objects were heavily dependant on each other, I made the choice to simplify the architecture into simply Games and Throws.  For the most part this worked much better than the original plan.
+
+There are several things that would improve this app:
+- Seperate the sensor from the screen
+- Use sockets to push updates to the screen
+- Add player names
+
+## Assigned instructions
 
 Write a Ruby on Rails API that takes score of a bowling game.
 
