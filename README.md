@@ -12,6 +12,8 @@ There are several things that would improve this app:
 - Use sockets to push updates to the screen
 - Add player names
 
+One of the biggest places that could be improved is how the DB is being called.  There isn't any reason why the DB could just be queried a single time per screen load and then parsed.  It's a small enough app that it doesn't make any real different at the moment.  But if we needed performace improvements, this would be the place to focus on.
+
 ## Assigned instructions
 
 Write a Ruby on Rails API that takes score of a bowling game.
